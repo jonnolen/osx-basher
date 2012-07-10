@@ -1,6 +1,6 @@
 # OSX BASHER
 
-OSX Basher is a bash_profile and bashrc file that borrwos heavily from [Expected Behaviors common-files](https://github.com/expectedbehavior/common-files) without some of the auto updating cruft and the specific code for handling remote connections.  That is mostly because I don't need it.  
+OSX Basher is a bash_profile and bashrc file that borrows heavily from [Expected Behaviors common-files](https://github.com/expectedbehavior/common-files) without the rails project specific commands, autoupdating checks or support for other *nix variants and remote connections. 
 
 Currently includes the following:
 
