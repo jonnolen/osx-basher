@@ -56,3 +56,7 @@ if [[ "$TERM" != 'dumb' ]] && [[ -n "$BASH" ]]; then
     #working dir basename and prompt
     PS1="${PS1}${FG_BLUE}\W${FG_RED}\$(__git_ps1 "[%s]")${FG_BLUE}\$ ${NO_COLOR}"
 fi
+
+git config --global color.ui auto
+
+
