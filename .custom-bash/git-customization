@@ -29,6 +29,9 @@ complete -o default -o nospace -F _git_branch gbr
 alias ga="git add"
 complete -o default -o nospace -F _git_add ga
 
+alias git-nuclear-option="git reset --hard; git clean -xdf"
+alias gno="git-nuclear-option"
+
 FG_BLACK="\[\033[01;30m\]"
 FG_WHITE="\[\033[01;37m\]"
 FG_RED="\[\033[01;31m\]"
