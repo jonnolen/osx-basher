@@ -14,20 +14,21 @@ alias gc="git commit"
 alias gca='git commit -a'
 alias gcam='git commit -a -m'
 alias gs='git status'
-alias gst='git status'
 alias gco="git checkout"
 alias gpp="git pull && git push"
 complete -o default -o nospace -F _git_checkout gco
 alias gpul="git pull"
 complete -o default -o nospace -F _git_pull gpull
-alias gpsh="git push"
+alias gpus="git push"
 complete -o default -o nospace -F _git_push gpush
 alias gd="git diff"
 complete -o default -o nospace -F _git_diff gd
-alias gbr="git branch"
-complete -o default -o nospace -F _git_branch gbr
+alias gb="git branch"
+complete -o default -o nospace -F _git_branch gb
 alias ga="git add"
 complete -o default -o nospace -F _git_add ga
+alias gaa="git add -A ."
+complete -o default -o nospace -F _git_add gaa
 
 alias git-nuclear-option="git reset --hard; git clean -xdf"
 alias gno="git-nuclear-option"
