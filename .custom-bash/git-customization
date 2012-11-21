@@ -17,9 +17,9 @@ alias gs='git status'
 alias gco="git checkout"
 alias gpp="git pull && git push"
 complete -o default -o nospace -F _git_checkout gco
-alias gpul="git pull"
+alias gpull="git pull"
 complete -o default -o nospace -F _git_pull gpull
-alias gpus="git push"
+alias gpush="git push"
 complete -o default -o nospace -F _git_push gpush
 alias gd="git diff"
 complete -o default -o nospace -F _git_diff gd
