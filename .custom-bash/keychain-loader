@@ -1,4 +1,4 @@
-
+#!bash
 for k in /usr/local/bin/keychain; do
     if [ -f $k ]; then
         for i in ~/.ssh/*; do
