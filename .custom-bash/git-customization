@@ -33,6 +33,16 @@ complete -o default -o nospace -F _git_add gaa
 alias git-nuclear-option="git reset --hard; git clean -xdf"
 alias gno="git-nuclear-option"
 
+_git_delete_local_and_remote_branch (){
+    if [ "$1" ]
+    then
+        gb -d "$1"; gpush origin :"$1"
+    fi
+}
+
+alias gda=_git_delete_local_and_remote_branch
+complete -o default -o nospace -F _git_checkout gda
+
 FG_BLACK="\[\033[01;30m\]"
 FG_WHITE="\[\033[01;37m\]"
 FG_RED="\[\033[01;31m\]"
