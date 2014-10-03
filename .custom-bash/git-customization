@@ -47,7 +47,7 @@ _git_delete_local_branch(){
     fi
 }
 
-alias gbd=_get_delete_local_branch
+alias gbd=_git_delete_local_branch
 complete -o default -o nospace -F _git_checkout gbd
 
 alias gda=_git_delete_local_and_remote_branch
