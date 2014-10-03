@@ -40,6 +40,16 @@ _git_delete_local_and_remote_branch (){
     fi
 }
 
+_git_delete_local_branch(){
+    if [ "$1" ]
+    then
+    	gb -d "$1";
+    fi
+}
+
+alias gbd=_get_delete_local_branch
+complete -o default -o nospec -F _git_checkout gbd
+
 alias gda=_git_delete_local_and_remote_branch
 complete -o default -o nospace -F _git_checkout gda
 
