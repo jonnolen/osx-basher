@@ -1,7 +1,7 @@
 #!bash
 
 for i in ~/.ssh/*; do
-    [ -f $i ] && [ -f $i.pub ] && keychain --nogui --inherit any $i
+    [ -f $i ] && [ -f $i.pub ] && keychain -q --nogui --inherit any $i
 done
 
 [ -f ~/.keychain/$HOSTNAME-sh ] && source ~/.keychain/$HOSTNAME-sh > /dev/null
