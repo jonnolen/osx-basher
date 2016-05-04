@@ -90,4 +90,5 @@ fi
 
 git config --global color.ui auto
 
+alias unmerged-branches="comm -12 <(git branch -a --no-merge master | sort) <(git branch -a --no-merge develop | sort)"
 

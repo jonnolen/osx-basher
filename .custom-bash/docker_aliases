@@ -1,0 +1,18 @@
+#!bash
+
+alias fig=docker-compose
+alias docko=docker-compose
+alias frun='fig run --rm web'
+alias fexec='frun bundle exec'
+alias frails='fexec rails'
+alias frake='fexec rake'
+
+alias docko-run='frun'
+alias docko-exec='fexec'
+alias docko-rails='frails'
+alias docko-rake='frake'
+alias docko-debug='docko run --rm --service-ports web'
+
+alias ddvc='docker volume rm $(docker volume ls -q -f dangling=true)'
+# dinghy thangs (a part of Docker)
+eval $(dinghy shellinit)
