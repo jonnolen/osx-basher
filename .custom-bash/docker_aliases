@@ -13,6 +13,12 @@ alias docko-rails='frails'
 alias docko-rake='frake'
 alias docko-debug='docko run --rm --service-ports web'
 
+function ___docko-psql {
+  docko run --rm db psql -h db $1 postgres
+}
+
+alias docko-psql='___docko-psql'
+
 alias ddvc='docker volume rm $(docker volume ls -q -f dangling=true)'
 # dinghy thangs (a part of Docker)
 eval $(dinghy shellinit)
