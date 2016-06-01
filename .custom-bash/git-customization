@@ -30,7 +30,7 @@ complete -o default -o nospace -F _git_add ga
 alias gaa="git add -A ."
 complete -o default -o nospace -F _git_add gaa
 
-alias git-nuclear-option="git reset --hard; git clean -xdf"
+alias git-nuclear-option="git reset --hard; git clean -fd"
 alias gno="git-nuclear-option"
 
 _git_delete_local_branch(){
@@ -82,7 +82,7 @@ if [[ "$TERM" != 'dumb' ]] && [[ -n "$BASH" ]]; then
       	#green user@hostname
      #	  PS1="${PS1}${FG_GREEN}"
     #fi
- 
+
     GIT_PS1_SHOWDIRTYSTATE=1
     #working dir basename and prompt
     PS1="${PS1}${FG_BLUE}\W${FG_RED}\$(__git_ps1 "[%s]")${FG_BLUE}\$ ${NO_COLOR}"
