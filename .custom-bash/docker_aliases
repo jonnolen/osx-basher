@@ -1,4 +1,4 @@
-#!bash
+#!/usr/bin/env bash
 
 alias docko=docker-compose
 
