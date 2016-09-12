@@ -7,7 +7,7 @@ alias docko-exec='docko-run bundle exec'
 alias docko-rails='docko-exec rails'
 alias docko-rake='docko-exec rake'
 alias docko-debug='docko run --rm --service-ports web'
-
+alias docko-logs='docko logs --tail 500 -f'
 function ___docko-psql {
   docko run --rm db psql -h db $1 postgres
 }
