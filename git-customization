@@ -1,6 +1,6 @@
 #!bash
-
-[[ -f $HOME/.custom-bash/git-completion ]] && source $HOME/.custom-bash/git-completion
+SCRIPT_PATH=$(cat "$HOME/.my-dotfiles-location")
+[[ -f "$SCRIPT_PATH/git-completion" ]] && source "$SCRIPT_PATH/git-completion"
 
 alias g='git'
 alias g{='git stash'
