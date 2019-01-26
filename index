@@ -9,4 +9,7 @@ SCRIPT_PATH="$(cat "$HOME/.my-dotfiles-location")"
 export EDITOR='code -w'
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-eval "$(nodenv init -)"
+
+if ! which nodenv; then
+  eval "$(nodenv init -)"
+fi
