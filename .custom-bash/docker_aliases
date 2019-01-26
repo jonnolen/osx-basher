@@ -15,5 +15,3 @@ function ___docko-psql {
 alias docko-psql='___docko-psql'
 
 alias ddvc='docker volume rm $(docker volume ls -q -f dangling=true)'
-# dinghy thangs (a part of Docker)
-eval $(dinghy shellinit)

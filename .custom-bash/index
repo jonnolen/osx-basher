@@ -1,0 +1,12 @@
+
+SCRIPT_PATH="$(cat "$HOME/.my-dotfiles-location")"
+
+[[ -f ${SCRIPT_PATH}/git-customization ]] && source ${SCRIPT_PATH}/git-customization
+[[ -f ${SCRIPT_PATH}/colors ]] && source ${SCRIPT_PATH}/colors
+# [[ -f ${SCRIPT_PATH}/keychain-loader ]] && source ${SCRIPT_PATH}/keychain-loader # replaced by host config and adding id_rsa passphrase to system keychain.
+[[ -f ${SCRIPT_PATH}/docker_aliases ]] && source ${SCRIPT_PATH}/docker_aliases
+
+export EDITOR='code -w'
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+eval "$(nodenv init -)"
