@@ -10,6 +10,6 @@ export EDITOR='code -w'
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-if ! which nodenv; then
+if command -v nodenv > /dev/null 2>&1; then
   eval "$(nodenv init -)"
 fi
